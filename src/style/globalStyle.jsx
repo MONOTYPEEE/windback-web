@@ -10,6 +10,6 @@ export const GlobalStyle = css`
 
     @font-face {
         font-family: 'Wanted Sans';
-        src: url('/public/font/WantedSans.woff2') format('woff2');
+        src: url('/font/WantedSans.woff2') format('woff2');
     }
 `
