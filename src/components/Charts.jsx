@@ -37,7 +37,7 @@ export function ChartByDay({data}){
         <ChartContainer>
             <ResponsiveContainer width='100%' height={200}>
                 <BarChart data={data} margin={{bottom: 20}}>
-                    <Tooltip content={<DayTooltip/>}/>
+                    <Tooltip content={<DayTooltip/>} cursor={{fillOpacity: 0.1}}/>
                     <Bar dataKey='count'>
                         <LabelList position='bottom' dataKey='day'/>
                         {data.map((d, i)=> <Cell key={i} fill={maxValue === d.count ? '#ACE54F' : '#ACE54F40'}/> )}
