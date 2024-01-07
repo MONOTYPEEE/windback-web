@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import { ResponsiveContainer, AreaChart, Area, Tooltip, BarChart, Bar, LabelList, Cell } from 'recharts'
 
 /**
- * Area Graph
+ * Daily Area Graph
  * @param {Object} props.data 
  * @returns 
  */
@@ -18,7 +18,7 @@ export function ChartByTime({data}){
                         </linearGradient>
                     </defs>
 
-                    <Tooltip contentStyle={tooltipStyle}/>
+                    <Tooltip content={<TimeTooltip/>}/>
                     <Area dataKey='value' type='natural' stroke='#ACE54F' strokeWidth={4} fill="url(#gradient)"/>
                 </AreaChart>
             </ResponsiveContainer>
@@ -37,7 +37,7 @@ export function ChartByDay({data}){
         <ChartContainer>
             <ResponsiveContainer width='100%' height={200}>
                 <BarChart data={data} margin={{bottom: 20}}>
-                    <Tooltip contentStyle={tooltipStyle}/>
+                    <Tooltip content={<DayTooltip/>}/>
                     <Bar dataKey='count'>
                         <LabelList position='bottom' dataKey='day'/>
                         {data.map((d, i)=> <Cell key={i} fill={maxValue === d.count ? '#ACE54F' : '#ACE54F40'}/> )}
@@ -48,12 +48,39 @@ export function ChartByDay({data}){
     )
 }
 
-const tooltipStyle = {
-    background: '#00000088', 
-    backdropFilter: 'blur(8px)', 
-    border: 'none', 
-    borderRadius: '8px'
+function TimeTooltip({active, payload, ...props}){
+    if(active){
+        return(
+            <TooltipBackground>
+                <p>{props.label}시</p>
+                <p>{payload[0].value}건</p>
+            </TooltipBackground>
+        )
+    }
+    else return null
 }
+
+function DayTooltip({active, payload}){
+    if(active){
+        return(
+            <TooltipBackground>
+                <p>{payload[0].payload.day}요일</p>
+                <p>{payload[0].payload.count}건</p>
+            </TooltipBackground>
+        )
+    }
+    else return null
+}
+
+
+const TooltipBackground = styled.div`
+    padding: 8px;
+    background: #00000088;
+    backdrop-filter: blur(4px);
+    border: none;
+    border-radius: 8px;
+`
+
 const ChartContainer = styled.div`
     width: 100%;
     background: #ffffff0D;
