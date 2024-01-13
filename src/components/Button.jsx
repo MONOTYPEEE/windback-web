@@ -6,6 +6,7 @@ import styled from '@emotion/styled'
  * @param {React.ReactNode} props.icon
  * @param {string} props.text 
  * @param {'white'|'transparent'} props.text
+ * @param {boolean} props.$fill
  * @returns {React.ReactNode}
  */
 export default function Button({icon, text, color='white', ...props}){
@@ -40,6 +41,7 @@ const ButtonBase = styled.button`
     font-size: 20px;
     cursor: pointer;
     transition: 250ms all ease-in-out;
+    width: ${({$fill})=>$fill && '100%'};
 
     &:disabled{
         cursor: not-allowed;
