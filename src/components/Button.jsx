@@ -10,7 +10,6 @@ import styled from '@emotion/styled'
  * @returns {React.ReactNode}
  */
 export default function Button({icon, text, color='white', ...props}){
-    console.log(color)
     if(color === 'white'){
         return(
             <WhiteButton {...props}>
