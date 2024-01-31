@@ -10,7 +10,7 @@ import { Text20Regular } from "./Texts"
  * @param {boolean} props.isProfile 
  * @returns 
  */
-export default function ChipList({title, value, valueSuffix, img, isProfile}){
+export default function Statistic({title, value, valueSuffix, img, isProfile}){
     return(
         <ListStyle>
             {img && <ChipImage src={img} circle={isProfile}/>}
