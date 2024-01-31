@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Main from "./pages/main"
+import Landing from "./pages/Landing"
 import ServerSelect from "./pages/stories/serverSelect"
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="*"/>
-                <Route path="/" element={<Main/>}/>
+                <Route path="/" element={<Landing/>}/>
                 <Route path="/servers" element={<ServerSelect/>}/>
                 <Route path="/auth"/>
                 <Route path="/rewind/*"/>

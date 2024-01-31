@@ -4,7 +4,7 @@ import { Text36Bold } from "../components/Texts";
 import Button from "../components/Button";
 import { Bot } from "lucide-react";
 
-export default function Main(){
+export default function Landing(){
     return(
         <Story>
             <Center>
