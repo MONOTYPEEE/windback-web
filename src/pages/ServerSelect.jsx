@@ -1,8 +1,8 @@
-import Button from "../../components/Button";
-import Server from "../../components/Server";
-import Story from "../../components/Story";
-import { Text36Bold } from "../../components/Texts";
-import { Center } from "../../components/layout/Center";
+import Button from "../components/Button";
+import Server from "../components/Server";
+import Story from "../components/Story";
+import { Text36Bold } from "../components/Texts";
+import { Center } from "../components/layout/Center";
 
 /**
  * Discord Server Select Page
