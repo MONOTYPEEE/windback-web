@@ -4,6 +4,8 @@ export const GlobalStyle = css`
     * {
         font-family: 'Wanted Sans';
         font-feature-settings: 'cv10' on, 'cv14' on, 'cv16' on, 'cv17' on, 'cv22' on;
+        word-break : keep-all;
+        word-wrap : break-word;
         margin: 0;
         box-sizing: border-box;
         color: #ffffff;
