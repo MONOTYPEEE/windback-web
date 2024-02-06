@@ -1,7 +1,6 @@
 import { Text32Bold } from "../../../components/Texts";
 import { Center } from "../../../components/layout/Center";
 import { ChartByTime, ChartByDay } from "../../../components/Charts";
-import ChipList from "../../../components/ChipList";
 import Button from "../../../components/Button";
 
 const data = {time: 23, day: '토'}
@@ -44,11 +43,10 @@ export default function PersonalMostActive(){
         <>
             <Center>
                 <ChartByDay data={weekChartData}/>
-                <Text32Bold $align="center">{data.day}요일, {data.time}시에 가장 활동적이었어요</Text32Bold>
                 <ChartByTime data={timeChartData}/>
-                <ChipList isProfile title='ㅁㄴㅇㄹ' value={124} valueSuffix='원' img='https://wallpapers.com/images/hd/discord-profile-pictures-jktaycg4bu6l4s89.jpg'/>
+                <Text32Bold $align="center">일주일 중 {data.day}요일, {data.time}시에 가장 활동적이었어요</Text32Bold>
             </Center>
-            <Button color="transparent" text="asdf" $fill/>
+            <Button color="transparent" text="다음" $fill/>
         </>
     )
 }
