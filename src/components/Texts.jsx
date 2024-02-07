@@ -24,6 +24,13 @@ export const Text32Bold = styled.div`
     text-align: ${({$align})=>$align};
     color: ${({$color})=> $color ? $color : null};
 `
+export const Text28Bold = styled.div`
+    font-size: 28px;
+    font-weight: 700;
+    width: ${({$noFill})=> !$noFill && '100%'};
+    text-align: ${({$align})=>$align};
+    color: ${({$color})=> $color ? $color : null};
+`
 export const Text24Regular = styled.div`
     font-size: 24px;
     font-weight: 500;
