@@ -1,7 +1,9 @@
+import { Center } from "../../../components/layout/Center";
+
 export default function ServerEOTY(){
     return(
-        <center>
+        <Center>
             
-        </center>
+        </Center>
     )
 }
