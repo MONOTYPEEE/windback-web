@@ -1,5 +1,7 @@
 export default function getNextStory(storyName){
     const nextStory = {
+        'IntroMain': 'PersonalIntro',
+        'PersonalIntro': 'PersonalMostActive',
         'PersonalMostActive': 'PersonalStatistic',
         'PersonalStatistic': 'ServerIntro',
         'ServerIntro': 'ServerEOTY',
