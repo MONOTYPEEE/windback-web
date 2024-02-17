@@ -19,6 +19,6 @@ export default function getNextStory(storyName){
         return nextStory[storyName]
     }
     else{
-        console.error('cannot find storyName')
+        console.error('cannot find', storyName)
     }
 }
