@@ -1,6 +1,7 @@
 import IntroMain from '../stories/IntroMain'
 import PersonalIntro from '../stories/personal/Intro'
 import PersonalMostActive from '../stories/personal/MostActive'
+import PersonalStatistic from '../stories/personal/Statistic'
 import ServerIntro from '../stories/server/Intro'
 import ServerEOTY from '../stories/server/EOTY'
 import ServerWOTY from '../stories/server/WOTY'
@@ -16,6 +17,7 @@ export default function StoryHandler({ page }){
     const components = {
         'IntroMain': ()=> IntroMain,
         'PersonalIntro': ()=> PersonalIntro,
+        'PersonalStatistic': ()=> PersonalStatistic,
         'PersonalMostActive': ()=> PersonalMostActive,
         'ServerIntro': ()=> ServerIntro,
         'ServerEOTY': ()=> ServerEOTY,
@@ -27,8 +29,8 @@ export default function StoryHandler({ page }){
         'AwardAbuse': ()=> AwardAbuse,
         'AwardHappy': ()=> AwardHappy,
         'AwardCensor': ()=> AwardCensor,
-    }
-    , Selected = components[page]()
+    },
+    Selected = components[page]()
 
     return <Selected/>
 }
