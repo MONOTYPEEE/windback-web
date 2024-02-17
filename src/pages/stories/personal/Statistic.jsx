@@ -12,9 +12,9 @@ export default function PersonalStatistic(){
     return(
         <Center>
             <Text32Bold $align="center">서버에서</Text32Bold>
-                <StatisticItem emoji="💬" value={data.message} title="메시지"/>
-                <StatisticItem emoji="🔗" value={data.url} title="링크"/>
-                <StatisticItem emoji="🖼️" value={data.media} title="미디어"/>
+                <StatisticItem emoji="💬" value={data.message.toLocaleString()} title="메시지"/>
+                <StatisticItem emoji="🔗" value={data.url.toLocaleString()} title="링크"/>
+                <StatisticItem emoji="🖼️" value={data.media.toLocaleString()} title="미디어"/>
             <Text32Bold $align="center">만큼 보냈어요</Text32Bold>
         </Center>
     )
@@ -23,9 +23,9 @@ export default function PersonalStatistic(){
 function StatisticItem({emoji, value, title}){
     return(
         <ItemBackground>
-            <Text36Bold>{emoji}</Text36Bold>
-            <Text28Bold $color="#ACE54F">{value}개</Text28Bold>
-            <Text20Regular $color="#FFFFFF80">{title}</Text20Regular>
+            <Text36Bold $noFill>{emoji}</Text36Bold>
+            <Text28Bold $noFill $color="#ACE54F">{value}개</Text28Bold>
+            <Text20Regular $noFill $color="#FFFFFF80">{title}</Text20Regular>
         </ItemBackground>
     )
 }
