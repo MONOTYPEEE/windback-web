@@ -12,7 +12,7 @@ export default function getNextStory(storyName){
         'AwardMentioned': 'AwardSex',
         'AwardSex': 'AwardAbuse',
         'AwardAbuse': 'AwardHappy',
-        'AwardHapppy': 'AwardCensor'
+        'AwardHappy': 'AwardCensor'
     }
 
     if(nextStory[storyName]){
