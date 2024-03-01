@@ -38,6 +38,7 @@ const ChipImage = styled.img`
     width: 24px;
     height: 24px;
     
+    object-fit: contain;
     border-radius: ${({circle})=> circle ? '999px' : '0'};
 `
 
