@@ -10,6 +10,13 @@ import styled from '@emotion/styled'
  * @param {'start'|'end'|'left'|'right'|'center'|'justify'} props.$align
  * @returns {React.ReactNode}
  */
+export const Text48Black = styled.div`
+    font-size: 48px;
+    font-weight: 900;
+    width: ${({$noFill})=> !$noFill && '100%'};
+    text-align: ${({$align})=>$align};
+    color: ${({$color})=> $color ? $color : null};
+`
 export const Text36Bold = styled.div`
     font-size: 36px;
     font-weight: 700;
