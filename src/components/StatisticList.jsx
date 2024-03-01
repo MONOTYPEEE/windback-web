@@ -4,7 +4,7 @@ import Statistic from "./Statistic"
 export default function StatisticList({data, valueSuffix = '', isProfile = false}){
     return(
         <Lister>
-            {data.map(d => <Statistic key={d.img} title={d.title} value={d.value} valueSuffix={valueSuffix} img={d.img} isProfile={isProfile}/> )}
+            {data.map(d => <Statistic key={d.title+d.value} title={d.title} value={d.value} valueSuffix={valueSuffix} img={d.img} isProfile={isProfile}/> )}
         </Lister>
     )
 }
