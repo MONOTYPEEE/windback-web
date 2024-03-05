@@ -34,7 +34,7 @@ export default function AwardMentioned(){
             <Center>
                 <AwardProfile {...data[0]}/>
                 <Text24Regular $align='center'>{data[0].count}회 멘션됨</Text24Regular>
-                <ChipList data={data.slice(1)} valueSuffix="회"/>
+                <ChipList data={data.slice(1)} valueSuffix="회" isProfile/>
             </Center>
         </>
     )
