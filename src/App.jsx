@@ -1,11 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Landing from "./pages/Landing"
-import ServerSelect from "./pages/ServerSelect"
+import ServerSelect from "./pages/serverSelect"
 import StoryProvider from "./pages/handler/StoryProvider"
 
 export default function App() {
     return (
-
         <BrowserRouter>
             <Routes>
                 <Route path="*"/>

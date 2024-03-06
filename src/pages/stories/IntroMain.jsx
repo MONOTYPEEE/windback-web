@@ -5,7 +5,7 @@ import { Center } from "../../components/layout/Center";
 import styled from "@emotion/styled";
 import { useContext } from "react";
 import { PageContext } from "../handler/StoryProvider";
-import getNextStory from "../../utils/getNextStory";
+import { getNextStory } from "../../utils/storyUtil";
 
 export default function IntroMain(){
     const PageState = useContext(PageContext)

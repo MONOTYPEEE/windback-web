@@ -3,7 +3,7 @@ import { Text36Bold } from '../../../components/Texts'
 import { Center } from '../../../components/layout/Center'
 import { useContext } from 'react'
 import { PageContext } from '../../handler/StoryProvider'
-import getNextStory from '../../../utils/getNextStory'
+import { getNextStory, getPreviousStory } from '../../../utils/storyUtil'
 
 export default function PersonalIntro(){
     const PageState = useContext(PageContext)
@@ -14,6 +14,7 @@ export default function PersonalIntro(){
                 userName님은 얼마나 활동했을까요?
             </Text36Bold>
             <Button text='다음' onClick={()=>PageState.set(getNextStory(PageState.state))}/>
+            <Button text='이전' color='transparent' onClick={()=>PageState.set(getPreviousStory(PageState.state))}/>
         </Center>
     )
 }
