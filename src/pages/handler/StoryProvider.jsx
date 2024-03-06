@@ -4,7 +4,7 @@ import Story from '../../components/Story'
 import { createContext } from 'react'
 import Button from '../../components/Button'
 import { ArrowRight } from 'lucide-react'
-import getNextStory from '../../utils/getNextStory'
+import { getNextStory } from '../../utils/storyUtil'
 
 export const PageContext = createContext()
 

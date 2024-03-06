@@ -3,7 +3,7 @@ import Button from  '../../../components/Button';
 import { Text36Bold } from '../../../components/Texts';
 import { PageContext } from '../../handler/StoryProvider';
 import { useContext } from 'react';
-import getNextStory from '../../../utils/getNextStory';
+import { getNextStory } from '../../../utils/storyUtil';
 
 export default function ServerIntro(){
     const PageState = useContext(PageContext)

@@ -3,7 +3,7 @@ import { Text36Bold } from '../../../components/Texts'
 import { Center } from '../../../components/layout/Center'
 import { useContext } from 'react'
 import { PageContext } from '../../handler/StoryProvider'
-import getNextStory from '../../../utils/getNextStory'
+import { getNextStory } from '../../../utils/storyUtil'
 
 export default function PersonalIntro(){
     const PageState = useContext(PageContext)

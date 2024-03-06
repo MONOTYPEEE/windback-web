@@ -3,7 +3,7 @@ import { Center } from "../../../components/layout/Center";
 import Button from "../../../components/Button";
 import { useContext } from "react";
 import { PageContext } from "../../handler/StoryProvider";
-import getNextStory from "../../../utils/getNextStory";
+import { getNextStory } from "../../../utils/storyUtil";
 
 export default function AwardIntro(){
     const serverName = 'Acme',
