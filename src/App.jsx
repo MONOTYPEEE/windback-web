@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Landing from "./pages/Landing"
-import ServerSelect from "./pages/stories/serverSelect"
+import ServerSelect from "./pages/serverSelect"
 
 function App() {
     return (
