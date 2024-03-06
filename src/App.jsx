@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Landing from "./pages/Landing"
 import ServerSelect from "./pages/serverSelect"
+import StoryProvider from "./pages/handler/StoryProvider"
 
 function App() {
     return (
@@ -10,7 +11,7 @@ function App() {
                 <Route path="/" element={<Landing/>}/>
                 <Route path="/servers" element={<ServerSelect/>}/>
                 <Route path="/auth"/>
-                <Route path="/rewind/*"/>
+                <Route path="/rewind/*" element={<StoryProvider/>}/>
             </Routes>
         </BrowserRouter>
     )
