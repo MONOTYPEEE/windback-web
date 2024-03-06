@@ -3,7 +3,7 @@ import Landing from "./pages/Landing"
 import ServerSelect from "./pages/serverSelect"
 import StoryProvider from "./pages/handler/StoryProvider"
 
-function App() {
+export default function App() {
     return (
         <BrowserRouter>
             <Routes>
@@ -11,10 +11,8 @@ function App() {
                 <Route path="/" element={<Landing/>}/>
                 <Route path="/servers" element={<ServerSelect/>}/>
                 <Route path="/auth"/>
-                <Route path="/rewind/*" element={<StoryProvider/>}/>
+                <Route path="/rewind" element={<StoryProvider/>}/>
             </Routes>
         </BrowserRouter>
     )
 }
-
-export default App
