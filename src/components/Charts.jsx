@@ -53,7 +53,7 @@ function TimeTooltip({active, payload, ...props}){
         return(
             <TooltipBackground>
                 <p>{props.label}시</p>
-                <p>{payload[0].value}건</p>
+                <p>{payload[0].value.toLocaleString()}건</p>
             </TooltipBackground>
         )
     }
@@ -65,7 +65,7 @@ function DayTooltip({active, payload}){
         return(
             <TooltipBackground>
                 <p>{payload[0].payload.day}요일</p>
-                <p>{payload[0].payload.count}건</p>
+                <p>{payload[0].payload.count.toLocaleString()}건</p>
             </TooltipBackground>
         )
     }
