@@ -26,9 +26,9 @@ const ServerBackground = styled.div`
     background: #ffffff1A;
 
     width: 100%;
-    border-radius: 8px;
-    padding: 8px;
-    gap: 8px;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    gap: 0.5rem;
 
     transition: 250ms all ease-in-out;
 
@@ -39,7 +39,7 @@ const ServerBackground = styled.div`
     }
 `
 const ServerIcon = styled.img`
-    border-radius: 888px;
-    width: 48px;
-    height: 48px;
+    border-radius: 888rem;
+    width: 3rem;
+    height: 3rem;
 `

@@ -23,23 +23,23 @@ export default function Statistic({title, value, valueSuffix, img, isProfile}){
 
 const ListStyle = styled.div`
     display: flex;
-    gap: 8px;
+    gap: 0.5rem;
 
     width: 100%;
 
     background: #ffffff1A;
     border: #ffffff1A 1px solid;
 
-    padding: 8px 12px;
-    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
 `
 
 const ChipImage = styled.img`
-    width: 24px;
-    height: 24px;
+    width: 1.5rem;
+    height: 1.5rem;
     
     object-fit: contain;
-    border-radius: ${({circle})=> circle ? '999px' : '0'};
+    border-radius: ${({circle})=> circle ? '999rem' : '0'};
 `
 
 const Layout = styled.div`

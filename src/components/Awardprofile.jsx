@@ -12,8 +12,8 @@ export default function AwardProfile({icon, name, tag, id}){
 }
 
 const LargeProfile = styled.img`
-    height: 160px;
-    width: 160px;
+    height: 10rem;
+    width: 10rem;
 
-    border-radius: 888px;
+    border-radius: 55.5rem;
 `

@@ -10,5 +10,5 @@ export const Center = styled.div`
     width: 100%;
     height: 100%;
 
-    gap: 16px;
+    gap: 1rem;
 `

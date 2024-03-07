@@ -12,7 +12,7 @@ export default function ChipList({data, valueSuffix = '', isProfile}){
 const Container = styled.div`
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 0.5rem;
 
     width: 100%;
 `
