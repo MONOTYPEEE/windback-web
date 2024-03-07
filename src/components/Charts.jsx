@@ -9,8 +9,8 @@ import { ResponsiveContainer, AreaChart, Area, Tooltip, BarChart, Bar, LabelList
 export function ChartByTime({data}){
     return(
         <ChartContainer>
-            <ResponsiveContainer width='100%' height={200}>
-                <AreaChart data={data} width={500} height={200}>
+            <ResponsiveContainer>
+                <AreaChart data={data}>
                     <defs>
                         <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
                             <stop offset="0%" stopColor="#ACE54F" stopOpacity={0.8}/>
@@ -35,7 +35,7 @@ export function ChartByDay({data}){
     const maxValue = Math.max(...data.map(d=>d.count))
     return(
         <ChartContainer>
-            <ResponsiveContainer width='100%' height={200}>
+            <ResponsiveContainer>
                 <BarChart data={data} margin={{bottom: 20}}>
                     <Tooltip content={<DayTooltip/>} cursor={{fillOpacity: 0.1, radius: 4}}/>
                     <Bar dataKey='count' radius={4}>
@@ -74,16 +74,17 @@ function DayTooltip({active, payload}){
 
 
 const TooltipBackground = styled.div`
-    padding: 8px;
+    padding: 0.5rem;
     background: #00000088;
     backdrop-filter: blur(4px);
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 `
 
 const ChartContainer = styled.div`
     width: 100%;
+    height: 30%;
     background: #ffffff0D;
-    border-radius: 16px;
-    padding: 8px;
+    border-radius: 1rem;
+    padding: 0.5rem;
 `
