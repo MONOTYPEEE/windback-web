@@ -9,6 +9,7 @@ export const GlobalStyle = css`
         margin: 0;
         box-sizing: border-box;
         color: #ffffff;
+        font-size: 16px;
     }
     @font-face {
         font-family: 'Wanted Sans';
@@ -25,5 +26,8 @@ export const GlobalStyle = css`
         align-items: center;
         justify-content: center;
     }
-
+    svg{
+        height: 1.5rem;
+        width: 1.5rem;
+    }
 `

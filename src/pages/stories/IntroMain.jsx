@@ -17,7 +17,7 @@ export default function IntroMain(){
             <Text36Bold $align='center'>{servername} 연말결산</Text36Bold>
             <Text16Regular $align='center' $color='#FFFFFF88'>by WindBack</Text16Regular>
             <Text20Regular $align='center'>userName님의 올 해 돌아보기</Text20Regular>
-            <Button icon={<ArrowRight size={20}/>} text="다음" onClick={()=>PageState.set(getNextStory(PageState.state))}/>
+            <Button icon={<ArrowRight/>} text="다음" onClick={()=>PageState.set(getNextStory(PageState.state))}/>
         </Center>
     )
 }
