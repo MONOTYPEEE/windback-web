@@ -17,14 +17,14 @@ const StoryBackground = styled.div`
     display: flex;
     width: 100%;
     max-height: 100dvh;
-    max-width: 600px;
+    max-width: 37.5rem;
     aspect-ratio: 2/3;
-    padding: 24px;
+    padding: 1.5rem;
 
-    gap: 16px;
+    gap: 1rem;
     flex-direction: column;
     align-items: flex-start;
 
-    border-radius: 16px;
+    border-radius: 1rem;
     background: linear-gradient(156deg, #1C1E18 0%, #2E4F14 100%);
 `
