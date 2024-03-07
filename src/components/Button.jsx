@@ -30,14 +30,14 @@ export default function Button({icon, text, color='white', ...props}){
 
 const ButtonBase = styled.button`
     display: flex;
-    height: 40px;
-    padding: 8px 12px;
-    gap: 4px;
+    height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+    gap: 0.25rem;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     border: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     cursor: pointer;
     transition: 250ms all ease-in-out;
     width: ${({$fill})=>$fill && '100%'};
